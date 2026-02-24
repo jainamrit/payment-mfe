@@ -1,0 +1,61 @@
+.payment-card {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: #f8fafc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pay-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #10b981;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pay-btn:disabled {
+  background-color: #6b7280;
+  cursor: not-allowed;
+}
+
+.pay-btn:hover:not(:disabled) {
+  background-color: #059669;
+  transform: scale(1.05);
+}
+
+.spinner-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.success-msg {
+  margin-top: 20px;
+  color: #16a34a;
+  font-weight: bold;
+}
